@@ -1,0 +1,6 @@
+schema = 1
+id = "rotating-cd"
+repository = "phonkboisad/winisland-rotatingcover"
+asset = "*.winisland-plugin.zip"
+categories = ["utility"]
+min_winisland_version = "1.4.0"

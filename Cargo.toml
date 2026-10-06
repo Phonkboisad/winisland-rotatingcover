@@ -1,0 +1,30 @@
+[package]
+name = "rotating_cd"
+version = "1.0.0"
+edition = "2024"
+authors = ["phonkboisad"]
+description = "A compact spinning CD display for WinIsland"
+license = "MIT"
+repository = "https://github.com/phonkboisad/winisland-rotatingcover"
+
+[lib]
+name = "rotating_cd"
+crate-type = ["cdylib", "rlib"]
+
+[profile.release]
+lto = true
+codegen-units = 1
+
+[dependencies]
+winisland-plugin-api = "0.11"
+
+[package.metadata.winisland]
+id = "rotating-cd"
+name = "Rotating CD"
+
+[dev-dependencies]
+winisland-plugin-api = { version = "0.11", features = ["packager"] }
+
+[[example]]
+name = "pack"
+path = "examples/pack.rs"
