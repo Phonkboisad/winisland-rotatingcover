@@ -13,7 +13,7 @@ use winisland_plugin_api::{PluginMetadataC, PluginToken, SurfaceSpecV2, WidgetId
 const PLUGIN_ID: &str = "rotating-cd";
 const PLUGIN_NAME: &str = "Rotating CD";
 const PLUGIN_AUTHOR: &str = "phonkboisad";
-const PLUGIN_DESCRIPTION: &str = "A rotating CD treatment for compact album artwork";
+const PLUGIN_DESCRIPTION: &str = env!("CARGO_PKG_DESCRIPTION");
 const ROTATION_SECONDS: f64 = 2.5;
 
 // These match WinIsland's native compact music artwork inset and size.
